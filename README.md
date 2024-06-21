@@ -2,7 +2,7 @@
 
 ## Description
 
-JUCE project to prototype a time warped looper, based on the looper.h from the DaisySP library.
+[JUCE](https://juce.com/) project to prototype a time warped looper, based on the looper.h from the DaisySP library.
 
 ## Usage
 
