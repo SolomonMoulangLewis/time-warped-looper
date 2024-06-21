@@ -5,6 +5,15 @@
 class Looper
 {
 public:
+    /**
+           @brief A looper with the ability to:
+                - Divide recorded loop into smaller segments 2, ..., 128
+                - Select currently looped segment
+                - Select Playback State: reverse, half-time, double-time playback modes
+                - Record in any playback state: reverse, half-time, double time
+           @author Solomon Moulang Lewis
+           @date Jun 2024
+    */
     Looper(){}
     ~Looper(){}
     
@@ -211,6 +220,7 @@ private:
             pos_ += buffer_size_;
     }
     
+    // TODO: fix clicks at loop points
     void WrapPosToSegments (float &inc)
     {
         // if recorded in reverse then loop from end -> start
